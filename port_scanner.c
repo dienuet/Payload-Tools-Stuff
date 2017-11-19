@@ -1,3 +1,6 @@
+//TO COMPLIE: gcc -o output port_scanner.c -pthread
+//This tool only run on linux OS.
+
 //all libs to run
 #include<stdio.h>
 #include<sys/types.h>

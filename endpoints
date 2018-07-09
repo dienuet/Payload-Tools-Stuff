@@ -13,7 +13,7 @@ api/v2/category_list
 api/v2/account
 api/v2/balance
 api/v2/user_info
-api/v2/hot_search_words/
+api/v2/hot_search_words
 api/v2/user/detail
 api/v2/user/get_detail
 api/v2/me

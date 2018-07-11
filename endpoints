@@ -2,6 +2,9 @@
 api/v1/account_info
 api/v1/setting_info
 api/v1/account
+api/v1/settings
+api/v1/infos
+api/v1/accounts
 api/v1/balance
 api/v1/user_info
 api/v1/user/details
@@ -18,3 +21,9 @@ api/v2/user/detail
 api/v2/user/get_detail
 api/v2/me
 api/v1/me
+api/v1/payment_form_config
+api/v1/payment_info
+api/v1/me/invites
+api/v1/me/cross_auth_token
+api/v1/referral/referral_info
+api/v1/me/social

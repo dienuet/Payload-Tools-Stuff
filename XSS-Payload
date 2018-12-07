@@ -1,1 +1,2 @@
 <marquee onstart='alert(document.domain)'>
+<marquee/**/onstart='alert(document.domain)'>

